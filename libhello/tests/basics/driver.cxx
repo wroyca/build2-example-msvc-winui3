@@ -1,15 +1,15 @@
-#include <sstream>
-#include <stdexcept>
+# include <libhello/version.hxx>
+# include <libhello/hello.hxx>
 
-#include <libhello/version.hxx>
-#include <libhello/hello.hxx>
+# ifdef NDEBUG
+# undef NDEBUG
+# endif
 
-#undef NDEBUG
-#include <cassert>
+# include <cassert>
 
-int main ()
+int
+main ()
 {
-  using namespace std;
   using namespace hello;
 
   // Basics.

@@ -1,12 +1,22 @@
 intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
-#import xxxx_libs += libhello%lib{hello}
+intf_libs  =+ liba{std}
+import intf_libs =+ gsl%lib{gsl}
 
-lib{hello}: {hxx ixx txx cxx}{** -version} hxx{version} $impl_libs $intf_libs
+lib{hello}: {hxx ixx txx cxx}{** -std -version} hxx{version} $impl_libs $intf_libs
 
 hxx{version}: in{version} $src_root/manifest
 
 hxx{export}@./: cxx.importable = false
+
+switch $cxx.target.class
+{
+  case 'windows'
+    source buildfile-msvc
+
+  case 'linux'
+    source buildfile-gcc
+}
 
 # Build options.
 #

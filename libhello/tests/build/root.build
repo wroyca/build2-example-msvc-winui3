@@ -1,4 +1,4 @@
-cxx.std = latest
+cxx.std = experimental # C++23
 
 using cxx
 
@@ -18,3 +18,7 @@ exe{*}: test = true
 # The test target for cross-testing (running tests under Wine, etc).
 #
 test.target = $cxx.target
+
+# Mitigate preprocessing bugs from PCH compilation.
+#
+obj{*}: cc.reprocess = true

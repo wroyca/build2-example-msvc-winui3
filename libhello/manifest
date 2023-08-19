@@ -11,4 +11,4 @@ email: you@example.org
 #build-error-email: you@example.org
 depends: * build2 >= 0.16.0
 depends: * bpkg >= 0.16.0
-#depends: libhello ^1.0.0
+depends: gsl >= 4.0.0

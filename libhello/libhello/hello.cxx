@@ -1,13 +1,9 @@
-#include <libhello/hello.hxx>
-
-#include <ostream>
-#include <stdexcept>
-
-using namespace std;
+# include <libhello/hello.hxx>
 
 namespace hello
 {
-  void say_hello (ostream& o, const string& n)
+  void
+  say_hello (ostream& o, const string& n)
   {
     if (n.empty ())
       throw invalid_argument ("empty name");

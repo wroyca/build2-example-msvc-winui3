@@ -1,4 +1,4 @@
-#pragma once
+# pragma once
 
 // The numeric version format is AAAAABBBBBCCCCCDDDE where:
 //
@@ -19,16 +19,14 @@
 // 3.0.0-b.2    0000299999999995020
 // 2.2.0-a.1.z  0000200001999990011
 //
-#define LIBHELLO_VERSION       $libhello.version.project_number$ULL
-#define LIBHELLO_VERSION_STR   "$libhello.version.project$"
-#define LIBHELLO_VERSION_ID    "$libhello.version.project_id$"
-#define LIBHELLO_VERSION_FULL  "$libhello.version$"
 
-#define LIBHELLO_VERSION_MAJOR $libhello.version.major$
-#define LIBHELLO_VERSION_MINOR $libhello.version.minor$
-#define LIBHELLO_VERSION_PATCH $libhello.version.patch$
-
-#define LIBHELLO_PRE_RELEASE   $libhello.version.pre_release$
-
-#define LIBHELLO_SNAPSHOT_SN   $libhello.version.snapshot_sn$ULL
-#define LIBHELLO_SNAPSHOT_ID   "$libhello.version.snapshot_id$"
+# define LIBHELLO_VERSION         $libhello.version.project_number$ULL
+# define LIBHELLO_VERSION_STR    "$libhello.version.project$"
+# define LIBHELLO_VERSION_ID     "$libhello.version.project_id$"
+# define LIBHELLO_VERSION_FULL   "$libhello.version$"
+# define LIBHELLO_VERSION_MAJOR   $libhello.version.major$
+# define LIBHELLO_VERSION_MINOR   $libhello.version.minor$
+# define LIBHELLO_VERSION_PATCH   $libhello.version.patch$
+# define LIBHELLO_PRE_RELEASE     $libhello.version.pre_release$
+# define LIBHELLO_SNAPSHOT_SN     $libhello.version.snapshot_sn$ULL
+# define LIBHELLO_SNAPSHOT_ID    "$libhello.version.snapshot_id$"
