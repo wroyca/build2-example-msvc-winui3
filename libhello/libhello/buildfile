@@ -1,7 +1,6 @@
 intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
-intf_libs  =+ liba{std}
-import intf_libs =+ gsl%lib{gsl}
+intf_libs += liba{std}
 
 lib{hello}: {hxx ixx txx cxx}{** -std -version} hxx{version} $impl_libs $intf_libs
 
